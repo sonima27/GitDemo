@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in HTML</title>
+</head>
+<body>
+    <h2>Forms in HTML</h2>
+    <form action="./image.html">
+        <label for="fName">First name: </label>
+        <input id="fName" type="text" minlength="5" maxlength="12" required placeholder="pls enter first name"> <!--placeholder is nothing but grey colour text in the input box-->
+        
+        <label for="mName">Middle name: </label>
+        <input id="mName" type="text" value="RK"> <!--this value 'RK' would be auto-populated; but can be over-written-->
+
+        <label for="lName">Last name: </label>
+        <input id="lName" type="text" disabled>
+
+        <br><br>
+        <label for="age">Age: </label>
+        <input id="age" type="number">
+
+        <br><br>
+        <label for="eMail">E mail: </label>
+        <input id="eMail" type="email">
+
+        <br><br>
+        <label for="date">Date of Joining: </label>
+        <input id="date" type="date">
+
+        <br><br>
+        <label for="password">Password: </label>
+        <input id="password" type="password">
+
+        <br><br>
+        <p>Enter your shirt size: </p>
+        <input type="radio" name="shirtSize" id="small"> 
+        <!--this 'shirtSize' name should be the same in all th einput tags of the radio buttons; only then would the user be able to choose just one option i/o many-->
+         <label for="small">small size</label>
+         <!-- <input>'s id name and <label>'s for name should be same for enabling selection of redio button even while hovering over the name.; here for eg on th etext 'small size' -->       
+        
+        <input type="radio" name="shirtSize" id="medium" checked> 
+         <label for="medium">medium size</label>
+        
+        <input type="radio" name="shirtSize" id="large"> 
+         <label for="large">large size</label>
+<br><br>
+
+<!-- Checkbox cosing begins -->
+         <p>Select the known languages: </p>
+        <input type="checkbox" name="language" id="Hindi"> 
+         <label for="Hindi">Hindi</label>
+                 
+        <input type="checkbox" name="language" id="English" checked> 
+         <label for="English">English</label>
+        
+        <input type="checkbox" name="language" id="Marathi"> 
+         <label for="Marathi">Marathi</label>
+ <!-- Checkbox coding ends- multiple selection possible -->
+
+<br><br>
+<label for="color">Please select the color for your shirt: <label>
+<input id="color" type="color">
+<br><br>
+
+<!-- For Dropdown -->
+<label for="paymentOption">Please select a payment method</label>
+<select name="payment" id="paymentOption">
+    <option value=""></option> <!--for blank option in the dropdown-->
+    <option value="gPay">gPay</option>
+    <option value="phonePay">phonePay</option>
+    <option value="Debit Card">Debit Card</option>
+    <option value="Credit Card">Credit Card</option>
+    <option value="COD">COD</option>
+</select>
+<!-- Dropdown coding ends -->
+
+<br><br>
+<label for="comments">Please provide your valuable feedback</label>
+<!-- <input type="text" length> -->
+ <textarea 
+    name="cmt" 
+    id="comments" 
+    rows="14" 
+    cols="100"
+    placeholder="please enter comments here..">
+</textarea> <!--placeholder is used for broader and bigger input box-->
+<br><br>
+
+<input type="reset">
+<input type="submit">
+
+    </form>
+</body>
+</html>
