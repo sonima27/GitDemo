@@ -33,4 +33,8 @@ git status
 
 git add . OR git add 1_Funda_of_Web_Tech.txt
 git status
-git commit
+git commit-This will give a command to run, we have to copy paste it and run
+
+
+create a new branch:
+git checkout -b "branchName"
